@@ -57,7 +57,7 @@ const createCard = () => {
                     </div>
     <div class="card-body">
         <h5 class="card-title" style="font-family: let(--font-ssp-bold);">${data[el].title}</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+        <p class="card-text">${data[el]["sub-title"]}</p>
         <div class="d-flex mt-3 align-items-center">
             <img src="${data[el].author_pic_url}" class="rounded-circle img-fluid w-25" alt="">
             <p class="ml-2 mb-0 small" style="font-family: let(--font-ssp-semibold); color: #C271FF;">${data[el].author}</p>
@@ -119,8 +119,7 @@ const createCardTwo = () => {
                     </div>
     <div class="card-body">
         <h5 class="card-title" style="font-family: let(--font-ssp-bold);">${data[el].title}</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-        <div class="d-flex mt-3 align-items-center">
+        <p class="card-text">${data[el]["sub-title"]}">
             <img src="${data[el].author_pic_url}" class="rounded-circle img-fluid w-25" alt="">
             <p class="ml-2 mb-0 small" style="font-family: let(--font-ssp-semibold); color: #C271FF;">${data[el].author}</p>
         </div>
