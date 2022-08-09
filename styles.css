@@ -339,3 +339,7 @@ td {
 .latest-video-container .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
+
+[type=button]:hover {
+  opacity: 50%;
+}
