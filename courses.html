@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Smile School</title>
+</head>
+<body>
+    <main class="bg-image d-flex flex-column" 
+    style="
+    background-image: url('./images-2/pic_3.jpg');
+    height: fit-content;">
+       <header class="container d-flex justify-content-between align-items-center pt-4 mb-5">
+        <nav class="navbar navbar-expand-sm w-100">
+            <div class="another-cont d-flex w-75">
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="holberton_school-icon-menu" style="font-size: 3rem;"></span></button>
+                <div class="logo d-flex">
+                    <a class="nav-link p-0" href="./homepage.html"><img class="logo-img" src="./images-2/smile_off.png" alt="" style="height: 30px;"></a>
+                    <a class="nav-link p-0" href="./homepage.html"><img src="./images-2/logo.png" class="mr-auto img-fluid ml-3" style="width: 112px;"></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav nav-container container d-flex justify-content-end align-items-center">
+                    <li class="nav-item">
+                        <a class="p-2 nav-link" href="./courses.html" style="font-family: var(--font-ssp-bold); color: #C271FF;">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="p-2 text-white nav-link" href="./pricing.html" style="font-family: var(--font-ssp-bold);">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="p-2 text-white nav-link" href="./login.html" style="font-family: var(--font-ssp-bold);">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="container hero-container d-flex flex-column">
+            <div class="hero-container-1 container d-flex flex-column align-items-center mt-3 mb-5">
+                <div class="w-50">
+                    <h1 class="text-white mb-5" style="
+                    font-family: Coiny;
+                    text-shadow: 2px;">
+                    « Don’t cry because it’s over.
+                    <strong style="color: #C271FF;">Smile</strong> because it happened. »
+                    </h1>
+                </div>
+        </div>
+    </main>
+    <section class="dropdown-container d-flex justify-content-center align-items-center" style="background-color: #C271FF;">
+        <div class="cont1 d-flex flex-column w-25 m-3">
+            <span style="font-family: var(--font-ssp-bold); color: #FFFFFF; font-size: .8rem;">Keywords</span>
+            <div class="hero-container d-flex align-items-center justify-content-between" style="background-color: rgba(255, 255, 255, .25); height: 3rem;">
+                <div class="input-group rounded align-items-center">
+                    <span class="holberton_school-icon-search_1 p-1" style="font-size: 2rem;"></span>
+                    <input name="searchfield" type="search" onfocusout="useSearch()" class="form-control rounded" style="background-color: transparent; border: none;" placeholder="Search by keywords" aria-label="Search" aria-describedby="search-addon" />
+                </div>
+            </div>
+        </div>
+        <div class="cont2 d-flex flex-column w-25 m-3">
+            <span style="font-family: var(--font-ssp-bold); color: #FFFFFF; font-size: .8rem;">TOPIC</span>
+                <div class="dropdown show">
+                    <button class="btn-lg w-100 border-0 d-flex align-items-center justify-content-between" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgba(255, 255, 255, .25); height: 3rem;">
+                        <div id="place" style="font-family: var(--font-ssp-light); color:#FFFFFF;">Novice</div>
+                        <div class="dropdown-toggle p-0 m-0" style="font-family: var(--font-ssp-light); font-size: 23px; color: #FFFFFF;"></div>
+                    </button>
+                    <div class="dropdown-menu w-100" id="drops" aria-labelledby="dropdownMenuLink">
+                    </div>
+                </div>
+        </div>
+        <div class="cont3 d-flex flex-column w-25 m-3">
+            <span style="font-family: var(--font-ssp-bold); color: #FFFFFF; font-size: .8rem;">SORT BY</span>
+            <div class="dropdown show">
+                <button class="btn-lg w-100 border-0 d-flex align-items-center justify-content-between" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgba(255, 255, 255, .25); height: 3rem;">
+                    <div id="sort" style="font-family: var(--font-ssp-light); color:#FFFFFF;">Most popular</div>
+                    <div class="dropdown-toggle p-0 m-0" style="font-family: var(--font-ssp-light); font-size: 23px; color: #FFFFFF;"></div>
+                </button>
+                <div class="dropdown-menu w-100" id="drops2" aria-labelledby="dropdownMenuLink">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-video-container mt-5 mb-5">
+        <div class="w-75 m-auto">
+            <h2 class="text-black text-left mb-5" style="font-family: var(--font-ssp-light); font-size: 1rem;">11 videos</h2>
+        </div>
+        <div id="carouselExampleControlsbl" class="carousel slide" data-ride="carousel">
+            <div class="profile-container d-flex justify-content-center">
+                <div class="carousel-inner d-flex flex-wrap w-75" id="videos">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-container d-flex justify-content-center" style="height: 18rem; background-color: var(--bg-dark);">
+        <div class="footer-container d-flex justify-content-between w-75" style="height: 18rem;">
+            <div class="logo align-self-center">
+                <a href="./homepage.html"><img class="logo-img" src="./images-2/smile_off.png" alt="" style="height: 30px;"></a>
+                <a href="./homepage.html"><img src="./images-2/logo.png" class="mr-auto img-fluid ml-3" style="width: 112px;"></a>
+            </div>
+            <div class="copyright align-self-end text-white mb-4" style="opacity: 35%;">
+                <span>©smileschool 2020</span> 
+            </div>
+            <div class="social-icons align-self-center">
+                <a href=""><span class="holberton_school-icon-ic_facebook p-2"></span></a>
+                <a href=""><span class="holberton_school-icon-ic_twitter p-2"></span></a>
+                <a href=""><span class="holberton_school-icon-ic_instagram p-2"></span></a>
+            </div>
+        </div>
+    </footer>
+</body>
